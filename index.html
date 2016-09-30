@@ -4,7 +4,6 @@
   <!-- This tells the browser how to read the document. -->
   <meta charset="utf-8">
 
-  <!-- Tells the browser what the title of this page should be. -->
   <title>Resume</title>
 
   <!-- Load the page styles. -->
@@ -21,15 +20,35 @@
 <body unresolved>
   <div id="main">
 
-    <!--
-    Everything from here to the <script> tag below is the skeleton of your
-    website. Your code will add information to each of the sections of the
-    resume below. You can pretty easily figure out what each section will
-    display by looking at the id or at what's written between the <h2> tags.
+    <!--TODO:
+        3. Add a few more entries to Projects section
+          3.1. Possibly expand on descriptions
+        4. Replace Placeholder images with real images
+        5. Upload all projects to github
+        6. Fix so that hitting "Home" brings it back up to ABOVE the name header
+        8. Fix College URLs
+        9. Change skills to horizontal list
+        10. Make menu responsive
     -->
+   <nav class="main-nav">
+
+    <div class="container">
+      <a href="#header">Home</a>
+      <a href="#workExperience">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#mapDiv">Map</a>
+    </div>
+
+    </nav>
+
+
     <div id="header" class="center-content clearfix">
       <ul id="topContacts" class='flex-box'></ul>
     </div>
+
+
+
     <div style='clear: both;'></div>
     <div id="workExperience" class='gray'>
       <h2>Work Experience</h2>
@@ -41,16 +60,16 @@
       <h2>Education</h2>
     </div>
     <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
+      <h2>Where I've Worked</h2>
     </div>
     <div id="letsConnect" class='dark-gray'>
-      <h2 class='orange center-text'>Let's Connect</h2>
+      <h2 class='orange center-text'>Contact Me</h2>
         <ul id="footerContacts" class="flex-box">
       </ul>
     </div>
   </div>
 
-  
+
   <script src="js/resumeBuilder.js"></script>
 
 
